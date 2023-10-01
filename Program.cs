@@ -1,13 +1,29 @@
 ﻿// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 // 3, 5 -> 24
-Console.WriteLine("введите число A");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите число B");
-int b = Convert.ToInt32(Console.ReadLine());
-int degree = a;
+// Console.WriteLine("введите число A");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("введите число B");
+// int b = Convert.ToInt32(Console.ReadLine());
+// int degree = a;
 
-for (int i = 1; i < b; i++)
+// for (int i = 1; i < b; i++)
+// {
+// degree =degree * a;
+// }
+// Console.WriteLine("A в степени B =: " + degree);
+
+// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+// 452 -> 11
+// 82 -> 10
+// 9012 -> 12
+Console.WriteLine("введите число");
+int i = Convert.ToInt32(Console.ReadLine());
+int sum = 0;
+
+while (i > 0)
 {
-degree =degree * a;
+int num = i % 10;
+i = i / 10;
+sum = sum + num;
 }
-Console.WriteLine("A в степени B =: " + degree);
+Console.WriteLine("сумма равна: " + sum);
